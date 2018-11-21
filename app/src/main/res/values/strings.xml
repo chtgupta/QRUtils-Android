@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QRUtils Demo</string>
+    <string name="project_name">QRUtils</string>
+    <string name="github">Find this project on Github</string>
+    <string name="repo">https://chtgupta.github.io/QRUtils-Android</string>
+    <string name="description">QRUtils is an open source project which makes dealing with QR codes hassle free for Android app developers. It includes lightweight libraries that ease up tasks like generating and reading QR codes. Fast, efficient and easy to use.</string>
+    <string name="love">For the \u2764 of open source</string>
+    <string name="developer_information">Developed by <b>Chahat Gupta</b></string>
+</resources>

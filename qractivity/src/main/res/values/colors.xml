@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="buttons_overlay_unselected">#7fff</color>
+    <color name="buttons_overlay_selected">#778c9eff</color>
+</resources>

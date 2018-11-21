@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="QRView">
+        <attr name="QR_data" format="string"/>
+        <attr name="QR_size" format="dimension"/>
+        <attr name="QR_errorCorrectionLevel" format="enum">
+            <enum name="L" value="0"/>
+            <enum name="M" value="1"/>
+            <enum name="Q" value="2"/>
+            <enum name="H" value="3"/>
+        </attr>
+        <attr name="QR_foregroundColor" format="color"/>
+        <attr name="QR_backgroundColor" format="color"/>
+    </declare-styleable>
+</resources>
