@@ -6,8 +6,6 @@ QRUtils is a set of pre-built, customizable UI components for creating and readi
 
 You can expect a fully functional QR scanning activity to launch in **a single line of code** whereas a customized QR code on the device's screen in **just 3 lines of code**. This README will guide you through. Good luck!
 
-> API 14 (Android ICS 4.0)
-
 ##  :mag: Table of contents
 
 1. [Modules](#modules)
