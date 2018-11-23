@@ -1,5 +1,12 @@
 apply plugin: 'com.android.library'
 
+ext {
+
+    PUBLISH_GROUP_ID = 'chtgupta.qrutils'
+    PUBLISH_ARTIFACT_ID = 'qrview'
+    PUBLISH_VERSION = '0.1.0'
+}
+
 android {
     compileSdkVersion 28
 
@@ -35,3 +42,5 @@ dependencies {
     //external libraries used
     implementation 'com.google.zxing:core:3.2.1'
 }
+
+apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
