@@ -58,7 +58,7 @@ Add the dependency
     app:QR_backgroundColor="@android:color/white"/>
 ```
 
-### Case II: Creating QR in Java file
+#### Case II: Creating QR in Java file
 
 ```java
 
