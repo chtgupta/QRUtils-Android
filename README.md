@@ -4,7 +4,14 @@
 
 QRUtils is a set of pre-built, customizable UI components for creating and reading QR codes. It provides different libraries for creating, scanning and reading QR codes. Installation is easy and implementation is easier.
 
-You can expect a fully functional QR scanning activity to launch in **a single line of code** whereas a customized QR code on the device's screen in **just 3 lines of code**. This README will guide you through. Good luck!
+#### You can expect
+
+* A fully functional QR scanning activity to launch in **a single line of code**
+* A customized QR code on the device's screen in **just 3 lines of code**
+* Customization more than you'll probably need
+
+This README will guide you through. Good luck!
+
 
 ##  :mag: Table of contents
 
