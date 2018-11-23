@@ -72,24 +72,22 @@ Add the dependency
                 .addListener(new QRViewListener() {
                     @Override
                     public void onQRInitiated() {
-                        qrView.setVisibility(View.GONE);
-                        progressBar.setVisibility(View.VISIBLE);
+                        // fired when QR generation starts
                     }
 
                     @Override
                     public void onQRGenerating() {
-
+			// fired when QR is generating
                     }
 
                     @Override
                     public void onQRGenerated(Bitmap qrBitmap) {
-                        progressBar.setVisibility(View.GONE);
-                        qrView.setVisibility(View.VISIBLE);
+                        // fired when QR is generated
                     }
 
                     @Override
                     public void onError() {
-
+			// fired if an error is encountered while generating QR
                     }
                 })
                 .build();
