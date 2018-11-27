@@ -31,7 +31,7 @@ Step 1. Add the JitPack repository to your build file
 
 Add the dependency
 
-```sh
+```xml
   <dependency>
      <groupId>chtgupta.qrutils</groupId>
      <artifactId>qrview</artifactId>
