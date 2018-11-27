@@ -65,13 +65,12 @@ Add the dependency
 
   QRView qrView = findViewById(R.id.qrView);
 
-        qrView.setData("https://chtgupta.github.io") // the only required method, rest all are optional
-	
-                .setSize(120, QRParams.DP)
-                .setErrorCorrectionLevel(ErrorCorrection.H)
-                .setQRForegroundColor(Color.BLACK)
-                .setQRBackgroundColor(Color.WHITE)
-                .addListener(new QRViewListener() {
+        qrView.setData("https://chtgupta.github.io")			// required
+                .setSize(120, QRParams.DP)				// optional
+                .setErrorCorrectionLevel(ErrorCorrection.H)		// optional
+                .setQRForegroundColor(Color.BLACK)			// optional
+                .setQRBackgroundColor(Color.WHITE)			// optional
+                .addListener(new QRViewListener() {			// optional
                     @Override
                     public void onQRInitiated() {
                         // fired when QR generation starts
@@ -92,7 +91,7 @@ Add the dependency
                         // fired if an error is encountered while generating QR
                     }
                 })
-                .build();  // always call build() after adding all methods and listener
+                .build();  // required: always call build() after adding all methods and listener
 ```
 
 ## Release History
