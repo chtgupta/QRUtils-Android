@@ -46,7 +46,7 @@ Add the dependency
 
 ```java
 
-private final int QR_SCAN_REQUEST_CODE = 123;
+private final int QR_SCAN_REQUEST_CODE = 123;	// declared globally
 
 ...
 
