@@ -59,13 +59,13 @@ Add the dependency
     app:QR_backgroundColor="@android:color/white"/>
 ```
 
-#### Case II: Creating QR in Java file
+#### Case II: Creating QR in the Activity
 
 ```java
 
   QRView qrView = findViewById(R.id.qrView);
 
-        qrView.setData("https://chtgupta.github.io") // the only required method, rest all methods and listener are optional
+        qrView.setData("https://chtgupta.github.io") // the only required method, rest all are optional
 	
                 .setSize(120, QRParams.DP)
                 .setErrorCorrectionLevel(ErrorCorrection.H)
@@ -104,9 +104,9 @@ Add the dependency
 
 Chahat Gupta – [@chtgupta](https://chtgupta.github.io) – admin@speakapp.me
 
-Distributed under the MIT license. See ``LICENSE`` for more information.
+Distributed under the APACHE 2.0 license. See ``LICENSE`` for more information.
 
-[https://github.com/chtgupta/FadeInTextView-Android/](https://github.com/chtgupta/FadeInTextView-Android/)
+[https://github.com/chtgupta/QRUtils-Android/](https://github.com/chtgupta/QRUtils-Android/)
 
 ## Contributing
 
