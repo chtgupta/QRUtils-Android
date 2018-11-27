@@ -48,12 +48,13 @@ Add the dependency
 <chtgupta.qrutils.qrview.QRView
     android:id="@+id/qrView"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-
-    app:QR_size="96dp"                            
-    app:QR_data="chtgupta.github.io"
-    app:QR_errorCorrectionLevel="M"
+    android:layout_height="wrap_content"                        
+    app:QR_data="https://chtgupta.github.io"
+				
+    // optional attributes
+				
+    app:QR_size="96dp"
+    app:QR_errorCorrectionLevel="H"
     app:QR_foregroundColor="@android:color/black"
     app:QR_backgroundColor="@android:color/white"/>
 ```
@@ -63,12 +64,13 @@ Add the dependency
 ```java
 
   QRView qrView = findViewById(R.id.qrView);
-  
-  qrView.setData(data)
-                .setSize(Integer.parseInt(size.getText().toString()), (QRParams) sizeSpinner.getSelectedItem())
-                .setErrorCorrectionLevel((ErrorCorrection) errorCorrectionSpinner.getSelectedItem())
-                .setQRForegroundColor(foregroundColor)
-                .setQRBackgroundColor(backgroundColor)
+
+        qrView.setData("https://chtgupta.github.io") // the only required method, rest all methods and listener are optional
+	
+                .setSize(120, QRParams.DP)
+                .setErrorCorrectionLevel(ErrorCorrection.H)
+                .setQRForegroundColor(Color.BLACK)
+                .setQRBackgroundColor(Color.WHITE)
                 .addListener(new QRViewListener() {
                     @Override
                     public void onQRInitiated() {
@@ -77,7 +79,7 @@ Add the dependency
 
                     @Override
                     public void onQRGenerating() {
-			// fired when QR is generating
+                        // fired when QR is generating
                     }
 
                     @Override
@@ -87,11 +89,10 @@ Add the dependency
 
                     @Override
                     public void onError() {
-			// fired if an error is encountered while generating QR
+                        // fired if an error is encountered while generating QR
                     }
                 })
-                .build();
-  
+                .build();  // always call build() after adding all methods and listener
 ```
 
 ## Release History
