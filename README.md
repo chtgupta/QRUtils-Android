@@ -6,8 +6,8 @@ QRUtils is a set of pre-built, customizable UI components for creating and readi
 
 #### You can expect
 
-* A fully functional QR scanning activity to launch in **a single line of code**
-* A customized QR code on the device's screen in **just 3 lines of code**
+* A customized QR code on the device's screen in **a single line of code**
+* A fully functional QR scanning activity to launch in **1 to 3 lines of code**
 * Customization more than you'll probably need
 
 This README will guide you through. Good luck!
