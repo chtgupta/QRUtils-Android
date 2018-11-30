@@ -11,6 +11,7 @@ Say hi to QRView! A custom View that draws QR codes on the screen easily and eff
 * **Customizable:** Can play around with colours, error correction levels and more
 
 ## Demo Video
+Click on the thumbnail below to watch demo video
 
 <a href="https://youtu.be/VGcbVXD85SM" target="_blank"><img src="../img/thumbnail-qrview.png" 
 alt="Loading thumbnail, please wait..." width="85%" border="10" /></a>
