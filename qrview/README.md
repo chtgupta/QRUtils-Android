@@ -13,7 +13,7 @@ Say hi to QRView! A custom View that draws QR codes on the screen easily and eff
 ## Demo Video
 
 <a href="https://youtu.be/VGcbVXD85SM" target="_blank"><img src="../img/thumbnail-qrview.png" 
-alt="IMAGE ALT TEXT HERE" width="85%" border="10" /></a>
+alt="Loading thumbnail, please wait..." width="85%" border="10" /></a>
 
 ## Installation
 
