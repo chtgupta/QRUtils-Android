@@ -10,6 +10,12 @@ Say hi to QRActivity! A customizable, pre-built activity ready to launch and rea
 * **Fast:** You can expect it to lauch, read the QR and return the result within a second
 * **Customizable:** Restrict image picker usage, autofocus interval, toggle fullscreen and more
 
+## Demo Video
+Click on the thumbnail below to watch demo video
+
+<a href="https://youtu.be/lKSWgqqBhls" target="_blank"><img src="../img/thumbnail-qractivity.png" 
+alt="Loading thumbnail, please wait..." width="85%" border="10" /></a>
+
 ## Installation
 
 ### Gradle
@@ -82,6 +88,25 @@ startActivityForResult(
             }
         }
     }
+```
+
+## Methods and functions
+
+### Building
+
+```java
+setImagePickerEnabled(boolean imagePickerEnabled)	// enables/disables the use of image picker for reading QRs from image files
+setFullScreen(boolean fullScreen)			// hides the status bar in QRActivity if true
+setAutoFocusInterval(long interval)			// sets the auto focus interval in QR scanner
+setFocusOnTouchEnabled(boolean focusOnTouch)		// decides if QR scanner should focus on tap (may not work on all devices)
+build()							// builds the QR scanner and returns as an Intent (required)
+```
+
+### Getting the result
+
+```java
+String qrData = data.getStringExtra("qrData");    	// getting scanned QR data
+String error = data.getStringExtra("error");      	// getting the error message (in case one occurs)
 ```
 
 ## Release History
