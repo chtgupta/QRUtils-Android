@@ -10,6 +10,11 @@ Say hi to QRView! A custom View that draws QR codes on the screen easily and eff
 * **Flexible:** Can generate QR codes directly from XML attributes
 * **Customizable:** Can play around with colours, error correction levels and more
 
+## Demo Video
+
+<a href="https://youtu.be/VGcbVXD85SM" target="_blank"><img src="../img/thumbnail-qrview.png" 
+alt="IMAGE ALT TEXT HERE" width="85%" border="10" /></a>
+
 ## Installation
 
 ### Gradle
@@ -92,6 +97,31 @@ Add the dependency
                     }
                 })
                 .build();  // required: always call build() after adding all methods and listener
+```
+
+## Attributes and methods
+
+### XML
+
+```xml                      
+app:QR_data				<!-- sets the data in QR (required) -->
+app:QR_size				<!-- sets the dimensions of QR -->
+app:QR_errorCorrectionLevel		<!-- sets the error correction level in QR -->
+app:QR_foregroundColor			<!-- sets the foreground color of QR -->
+app:QR_backgroundColor			<!-- sets the background color of QR -->
+```
+
+### Java
+
+```java
+setData(String data)					// sets the data in QR (required)
+setSize(int size)					// sets the dimensions of QR in px
+setSize(int size, QRParams param)			// sets the dimensions of QR in px or dp
+setErrorCorrectionLevel(ErrorCorrection level)		// sets the error correction level in QR
+setQRForegroundColor(int color)				// sets the foreground color of QR
+setQRBackgroundColor(int color)				// sets the background color of QR
+addListener(QRViewListener listener)			// sets a listener to monitor progress of QR generation
+build()							// builds/rebuilds the QR with provided params (required)
 ```
 
 ## Release History
