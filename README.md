@@ -25,15 +25,15 @@ This README will guide you through. Good luck!
 
 ## Modules
 
-QRUtils provides separate modules for different functionalities. All the modules listed here are concerned with creating or reading QR codes. See individual instructions for each module to know what they do:
+QRUtils provides separate modules for different functionalities. All the modules listed here are concerned with creating or reading QR codes. See individual instructions for each module to know more:
 
-#### QRView
+### QRView
 
-QRView is a custom Android View that facilitates generation of customized QR codes in as less as **3 lines of code**. It can also generate QR codes directly from XML attributes. Forget 300 lines of code and multiple classes to generate QR bitmaps. This library is all you need. Read more about implementation and usage of QRView [here](qrview/README.md).
+QRView is a custom Android View that facilitates the generation of customized QR codes in as less as **3 lines of code**. It can even generate QR codes directly from XML attributes. Forget 300 lines of code and multiple classes. This library is all you need. Read more about implementation and usage of QRView [here](qrview/README.md).
 
-#### QRActivity
+### QRActivity
 
-QRActivity is a customizable, pre-built QR scanner activity which you can built with required parameters and launched in order to get the scanned result. Other features include flashlight toggle and file picker to read QR codes from image files. Read more about implementation and usage of QRActivity [here](aractivity/README.md).
+QRActivity is a customizable, pre-built QR scanner activity which you can be built with required parameters and launched in order to scan or read QR codes. Other features include flashlight toggle and file picker to read QR codes from image files. Read more about implementation and usage of QRActivity [here](qractivity/README.md).
 
 ## Installation
 
@@ -43,10 +43,10 @@ In your `app/build.gradle` file add a dependency on one of the QRUtils libraries
 
 dependencies {
 
-    // QRView for generating QR codes
+    // QRView : for generating QR codes
     implementation 'chtgupta.qrutils:qrview:0.1.0'
 
-    // QRActivity for reading QR codes
+    // QRActivity : for reading QR codes
     implementation 'chtgupta.qrutils:qractivity:0.1.0'
 }
 
@@ -55,8 +55,8 @@ dependencies {
 ## Usage
 To get started, see the individual instructions for each module:
 
-* [QRView - to create QR codes](qrview/README.md)
-* [QRActivity - to read / scan QR codes](qractivity/README.md)
+* [QRView : for generating QR codes](qrview/README.md)
+* [QRActivity : for reading QR codes](qractivity/README.md)
 
 ## Sample app
 
